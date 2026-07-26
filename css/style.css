@@ -1,0 +1,20 @@
+/* For any custom styles that Tailwind doesn't cover */
+
+:root{
+
+--primary:#2E7D32;
+--secondary:#A5D6A7;
+
+--background:#F9FAF8;
+
+--text:#333333;
+
+--fitness:#DC2626;
+
+--sleep:#2563EB;
+
+--mental:#8B5CF6;
+
+--nutrition:#F59E0B;
+
+}
