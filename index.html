@@ -8,7 +8,7 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body class="min-h-screen flex flex-col">
 
@@ -40,13 +40,13 @@
   <!-- Mobile menu -->
   <ul id="mobile-menu" class="hidden md:hidden flex flex-col gap-1 px-4 pb-4 text-sm font-semibold">
     <li><a href="index.html" class="nav-link-mbb active block py-2">Home</a></li>
-    <li><a href="fitness.html" class="nav-link-mbb block py-2">Fitness</a></li>
-    <li><a href="sleep.html" class="nav-link-mbb block py-2">Sleep</a></li>
-    <li><a href="mental-health.html" class="nav-link-mbb block py-2">Mental Health</a></li>
-    <li><a href="nutrition.html" class="nav-link-mbb block py-2">Nutrition</a></li>
-    <li><a href="personal-action.html" class="nav-link-mbb block py-2">My Plan</a></li>
-    <li><a href="resources.html" class="nav-link-mbb block py-2">Resources</a></li>
-    <li><a href="about.html" class="nav-link-mbb block py-2">About</a></li>
+    <li><a href="pages/fitness.html" class="nav-link-mbb block py-2">Fitness</a></li>
+    <li><a href="pages/sleep.html" class="nav-link-mbb block py-2">Sleep</a></li>
+    <li><a href="pages/mental-health.html" class="nav-link-mbb block py-2">Mental Health</a></li>
+    <li><a href="pages/nutrition.html" class="nav-link-mbb block py-2">Nutrition</a></li>
+    <li><a href="pages/personal-action.html" class="nav-link-mbb block py-2">My Plan</a></li>
+    <li><a href="pages/resources.html" class="nav-link-mbb block py-2">Resources</a></li>
+    <li><a href="pages/about.html" class="nav-link-mbb block py-2">About</a></li>
   </ul>
 </header>
 
@@ -56,7 +56,7 @@
   <section class="hero hero-home text-center">
     <h1 class="brand-font text-4xl md:text-5xl font-bold mb-4">Small Habits. Big Bloom.</h1>
     <p class="max-w-2xl mx-auto text-lg mb-6">Practical, bite-sized guidance on fitness, sleep, mental health and nutrition — built for busy teens and young adults in Singapore.</p>
-    <a href="personal-action.html" class="inline-block bg-white text-green-900 font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition">Start Your Personal Action Plan</a>
+    <a href="pages/personal-action.html" class="inline-block bg-white text-green-900 font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition">Start Your Personal Action Plan</a>
   </section>
 
   <!-- ===== DAILY STREAK WIDGET ===== -->
@@ -75,19 +75,19 @@
   <section class="max-w-6xl mx-auto px-4 py-16">
     <h2 class="text-3xl font-bold text-center mb-10">Explore the Four Pillars</h2>
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      <a href="fitness.html" class="card-topic bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+      <a href="pages/fitness.html" class="card-topic bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
         <h3 class="text-fitness font-bold text-lg mb-2">Fitness</h3>
         <p class="text-sm text-gray-600">Quick workouts and movement habits that fit a packed school or work schedule.</p>
       </a>
-      <a href="sleep.html" class="card-topic bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+      <a href="pages/sleep.html" class="card-topic bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
         <h3 class="text-sleep font-bold text-lg mb-2">Sleep</h3>
         <p class="text-sm text-gray-600">Wind-down routines and sleep hygiene tips to help you actually rest.</p>
       </a>
-      <a href="mental-health.html" class="card-topic bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+      <a href="pages/mental-health.html" class="card-topic bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
         <h3 class="text-mental font-bold text-lg mb-2">Mental Health</h3>
         <p class="text-sm text-gray-600">Stress management and mindfulness practices for a competitive environment.</p>
       </a>
-      <a href="nutrition.html" class="card-topic bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+      <a href="pages/nutrition.html" class="card-topic bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
         <h3 class="text-nutrition font-bold text-lg mb-2">Nutrition</h3>
         <p class="text-sm text-gray-600">Simple, affordable ways to eat better without giving up your favourite foods.</p>
       </a>
@@ -140,13 +140,13 @@
   <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
     <p>&copy; <span id="footer-year"></span> Mind Body Bloom. A student project by Gabriel, Tong Yu, Guan Zhe &amp; Grace.</p>
     <div class="flex gap-4">
-      <a href="about.html" class="hover:underline">About</a>
-      <a href="resources.html" class="hover:underline">Resources</a>
+      <a href="pages/about.html" class="hover:underline">About</a>
+      <a href="pages/resources.html" class="hover:underline">Resources</a>
     </div>
   </div>
 </footer>
 
-<script src="assets/js/main.js"></script>
-<script src="assets/js/form-validation.js"></script>
+<script src="js/main.js"></script>
+<script src="js/form-validation.js"></script>
 </body>
 </html>
