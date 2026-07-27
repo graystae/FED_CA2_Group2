@@ -4,25 +4,45 @@ A healthy-lifestyle website for teens/young adults (16-30) in Singapore, coverin
 
 ## Folder Structure
 ```
-TongYu/
-├── index.html                 Homepage (Gabriel)
-├── mental-health.html          (Gabriel)
-├── mental-health-tips.html     (Gabriel)
-├── fitness.html                (Guan Zhe)
-├── fitness-workouts.html       (Guan Zhe)
-├── about.html                  (Guan Zhe)
-├── nutrition.html               (Grace)
-├── nutrition-recipes.html      (Grace)
-├── personal-action.html        (Grace)
-├── sleep.html                  (Tong Yu)
-├── sleep-tips.html              (Tong Yu)
-├── resources.html               (Tong Yu)
+FED_CA2_Group2/
+│
+├── index.html                         # Homepage (Gabriel)
+├── README.md
+│
+├── pages/
+│   ├── mental-health.html              # Gabriel
+│   ├── mental-health-tips.html         # Gabriel
+│   │
+│   ├── fitness.html                    # Guan Zhe
+│   ├── fitness-workouts.html           # Guan Zhe
+│   │
+│   ├── about.html                      # Guan Zhe
+│   │
+│   ├── nutrition.html                  # Grace
+│   ├── nutrition-recipes.html          # Grace
+│   │
+│   ├── personal-action.html            # Grace
+│   │
+│   ├── sleep.html                      # Tong Yu
+│   ├── sleep-tips.html                 # Tong Yu
+│   │
+│   └── resources.html                  # Tong Yu
+│
 ├── assets/
-│   ├── css/style.css           Shared custom styles (colors, fonts, components)
-│   ├── js/main.js               Nav toggle, streak counter, gallery filter, tabs, accordion
-│   ├── js/form-validation.js    Sign-up form validation (index.html)
-│   └── img/                     Images (keep each file under 800KB)
-└── README.md
+│   │
+│   ├── css/
+│   │   └── style.css                   # Shared styles
+│   │
+│   ├── js/
+│   │   ├── main.js                     # Navbar, streak counter, tabs, accordion
+│   │   └── form-validation.js          # Signup form validation
+│   │
+│   └── img/
+│       └── (empty)         
+│
+└── docs/                               # Optional (for project documents)
+    ├── project-planning.docx
+    └── reflection-journal.docx 
 ```
 
 ## File Naming Convention
