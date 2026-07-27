@@ -1,20 +1,51 @@
-# Mind Body Bloom
+# Mind Body Bloom — CA2 Front-End Web Development
 
-Front-End Web Development CA2
+A healthy-lifestyle website for teens/young adults (16-30) in Singapore, covering fitness, sleep, mental health and nutrition. Built with **Tailwind CSS** (CDN) + vanilla HTML5/JavaScript, no build step required.
 
-Framework:
-- Tailwind CSS
+## Folder Structure
+```
+TongYu/
+├── index.html                 Homepage (Gabriel)
+├── mental-health.html          (Gabriel)
+├── mental-health-tips.html     (Gabriel)
+├── fitness.html                (Guan Zhe)
+├── fitness-workouts.html       (Guan Zhe)
+├── about.html                  (Guan Zhe)
+├── nutrition.html               (Grace)
+├── nutrition-recipes.html      (Grace)
+├── personal-action.html        (Grace)
+├── sleep.html                  (Tong Yu)
+├── sleep-tips.html              (Tong Yu)
+├── resources.html               (Tong Yu)
+├── assets/
+│   ├── css/style.css           Shared custom styles (colors, fonts, components)
+│   ├── js/main.js               Nav toggle, streak counter, gallery filter, tabs, accordion
+│   ├── js/form-validation.js    Sign-up form validation (index.html)
+│   └── img/                     Images (keep each file under 800KB)
+└── README.md
+```
 
-Languages:
-- HTML
-- CSS
-- JavaScript
+## File Naming Convention
+- All lowercase, hyphen-separated (e.g. `sleep-tips.html`, `nutrition-recipes.html`).
+- Homepage must stay named `index.html`.
 
-Browser:
-- Google Chrome
+## Adding a New Page
+1. Copy an existing page closest to your topic (e.g. `sleep.html`) as a starting point.
+2. Update the `<title>`, hero section, and main content — keep the header/nav and footer markup identical across all pages so navigation stays consistent.
+3. Set the `active` class on your page's own nav link (desktop + mobile menu).
+4. Link `assets/css/style.css` and `assets/js/main.js` (and `form-validation.js` only if your page has the sign-up form).
 
-Members:
-- Gabriel
-- Grace
-- Guan Zhe
-- Tong Yu
+## Team Responsibilities
+- **Gabriel** — Homepage, Mental Health + Mental Health Tips
+- **Tong Yu** — Sleep, Sleep Tips, Resources
+- **Guan Zhe** — Fitness, Fitness Workouts, About (UI design lead)
+- **Grace** — Nutrition, Nutrition Recipes, Personal Action Plan
+
+## Assignment Compliance Checklist
+- [x] 12 pages total (3 per member), `index.html` as homepage
+- [x] One styling framework only (Tailwind CSS via CDN)
+- [x] Responsive nav with hamburger menu on mobile
+- [x] At least one HTML `<table>` (sleep.html, fitness-workouts.html)
+- [x] Form with custom JS validation (index.html sign-up form)
+- [x] JavaScript DOM interactivity: streak counter, gallery filter, tabs, accordion, mobile nav
+- [x] Consistent visual style (shared color system + typography in style.css)
