@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mind Body Bloom | About</title>
-<meta name="description" content="About the Mind Body Bloom project and team.">
+<title>Mind Body Bloom | Nutrition</title>
+<meta name="description" content="Simple, affordable ways to eat better without giving up your favourite foods.">
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -20,10 +20,10 @@
       <li><a href="fitness.html" class="nav-link-mbb">Fitness</a></li>
       <li><a href="sleep.html" class="nav-link-mbb">Sleep</a></li>
       <li><a href="mental-health.html" class="nav-link-mbb">Mental Health</a></li>
-      <li><a href="nutrition.html" class="nav-link-mbb">Nutrition</a></li>
+      <li><a href="nutrition.html" class="nav-link-mbb active">Nutrition</a></li>
       <li><a href="personal-action.html" class="nav-link-mbb">My Plan</a></li>
       <li><a href="resources.html" class="nav-link-mbb">Resources</a></li>
-      <li><a href="about.html" class="nav-link-mbb active">About</a></li>
+      <li><a href="about.html" class="nav-link-mbb">About</a></li>
     </ul>
     <button id="nav-toggle" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden text-white focus:outline-none" aria-label="Toggle navigation menu">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -36,41 +36,47 @@
     <li><a href="fitness.html" class="nav-link-mbb block py-2">Fitness</a></li>
     <li><a href="sleep.html" class="nav-link-mbb block py-2">Sleep</a></li>
     <li><a href="mental-health.html" class="nav-link-mbb block py-2">Mental Health</a></li>
-    <li><a href="nutrition.html" class="nav-link-mbb block py-2">Nutrition</a></li>
+    <li><a href="nutrition.html" class="nav-link-mbb active block py-2">Nutrition</a></li>
     <li><a href="personal-action.html" class="nav-link-mbb block py-2">My Plan</a></li>
     <li><a href="resources.html" class="nav-link-mbb block py-2">Resources</a></li>
-    <li><a href="about.html" class="nav-link-mbb active block py-2">About</a></li>
+    <li><a href="about.html" class="nav-link-mbb block py-2">About</a></li>
   </ul>
 </header>
 
 <main class="flex-1">
 
-  <section class="hero hero-neutral text-center">
-    <h1 class="brand-font text-4xl md:text-5xl font-bold mb-4">About Mind Body Bloom</h1>
-    <p class="max-w-2xl mx-auto text-lg">A student project encouraging small, practical habits for better well-being.</p>
+  <section class="hero hero-nutrition text-center">
+    <h1 class="brand-font text-4xl md:text-5xl font-bold mb-4">Eat Well, Without the Guesswork</h1>
+    <p class="max-w-2xl mx-auto text-lg">Practical nutrition habits that fit a student budget and a busy schedule.</p>
   </section>
 
   <section class="max-w-5xl mx-auto px-4 py-14">
-    <h2 class="text-2xl font-bold mb-4">Our Mission</h2>
-    <p class="text-gray-700 leading-relaxed mb-12">Mind Body Bloom was created to encourage teens and young adults (16-30) in Singapore to adopt small, practical habits that improve their physical and mental well-being — through simple guidance on exercise, sleep, mental health and nutrition, tailored to a fast-paced, competitive environment.</p>
+    <div class="flex flex-wrap gap-2 mb-6 border-b">
+      <button class="nutrition-tab-btn active px-4 py-2 font-semibold" data-tab-target="tab-basics">Basics</button>
+      <button class="nutrition-tab-btn px-4 py-2 font-semibold" data-tab-target="tab-budget">On a Budget</button>
+      <button class="nutrition-tab-btn px-4 py-2 font-semibold" data-tab-target="tab-hydration">Hydration</button>
+    </div>
 
-    <h2 class="text-2xl font-bold mb-6">Meet the Team</h2>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      <div class="card-topic bg-white rounded-xl shadow p-6 text-center">
-        <h3 class="font-bold mb-1">Gabriel</h3>
-        <p class="text-sm text-gray-600">Homepage &amp; Mental Health content</p>
-      </div>
-      <div class="card-topic bg-white rounded-xl shadow p-6 text-center">
-        <h3 class="font-bold mb-1">Tong Yu</h3>
-        <p class="text-sm text-gray-600">Sleep pages &amp; Resources</p>
-      </div>
-      <div class="card-topic bg-white rounded-xl shadow p-6 text-center">
-        <h3 class="font-bold mb-1">Guan Zhe</h3>
-        <p class="text-sm text-gray-600">Fitness content &amp; UI design</p>
-      </div>
-      <div class="card-topic bg-white rounded-xl shadow p-6 text-center">
-        <h3 class="font-bold mb-1">Grace</h3>
-        <p class="text-sm text-gray-600">Nutrition &amp; About page</p>
+    <div id="tab-basics" class="nutrition-tab-panel active">
+      <h2 class="text-xl font-bold mb-3">Nutrition Basics</h2>
+      <p class="text-gray-700">Aim to fill half your plate with vegetables, a quarter with protein (tofu, egg, chicken, fish), and a quarter with wholegrains. Avoid skipping meals — it often leads to overeating later.</p>
+    </div>
+    <div id="tab-budget" class="nutrition-tab-panel">
+      <h2 class="text-xl font-bold mb-3">Eating Well on a Budget</h2>
+      <p class="text-gray-700">Hawker centres and food courts often have healthier options like soup-based dishes or grilled proteins. Batch-cooking rice and simple stir-fries at home can also save money and calories.</p>
+    </div>
+    <div id="tab-hydration" class="nutrition-tab-panel">
+      <h2 class="text-xl font-bold mb-3">Staying Hydrated</h2>
+      <p class="text-gray-700">Singapore's heat means you lose fluids fast. Aim for about 2 litres of water a day, and carry a reusable bottle to make it an easy habit.</p>
+    </div>
+  </section>
+
+  <section class="bg-white py-14">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-6 text-center">Want recipe ideas?</h2>
+      <p class="text-center text-gray-600 mb-8">Check out simple, budget-friendly recipes built around these principles.</p>
+      <div class="text-center">
+        <a href="nutrition-recipes.html" class="inline-block btn-nutrition font-semibold px-6 py-3 rounded-full hover:opacity-90 transition">See Simple Recipes</a>
       </div>
     </div>
   </section>

@@ -1,80 +1,152 @@
-<!-- Webpage Template -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Mind Body Bloom</title>
-
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mind Body Bloom | Home</title>
+<meta name="description" content="Mind Body Bloom helps young adults in Singapore build small, practical habits for better physical and mental well-being.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
+<body class="min-h-screen flex flex-col">
 
-<body class="bg-stone-50 text-gray-800">
+<!-- ===== NAVBAR ===== -->
+<header class="sticky top-0 z-50 shadow-md" style="background-color:#1f4b33;">
+  <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
+    <a href="index.html" class="brand-font text-xl font-bold text-white">Mind Body Bloom</a>
 
-<!-- Shared Navbar -->
-<header class="bg-green-700 text-white shadow">
+    <!-- Desktop links -->
+    <ul class="hidden md:flex gap-6 text-sm font-semibold">
+      <li><a href="index.html" class="nav-link-mbb active">Home</a></li>
+      <li><a href="fitness.html" class="nav-link-mbb">Fitness</a></li>
+      <li><a href="sleep.html" class="nav-link-mbb">Sleep</a></li>
+      <li><a href="mental-health.html" class="nav-link-mbb">Mental Health</a></li>
+      <li><a href="nutrition.html" class="nav-link-mbb">Nutrition</a></li>
+      <li><a href="personal-action.html" class="nav-link-mbb">My Plan</a></li>
+      <li><a href="resources.html" class="nav-link-mbb">Resources</a></li>
+      <li><a href="about.html" class="nav-link-mbb">About</a></li>
+    </ul>
 
-    <nav class="max-w-7xl mx-auto flex justify-between items-center p-4">
+    <!-- Hamburger button -->
+    <button id="nav-toggle" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden text-white focus:outline-none" aria-label="Toggle navigation menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </nav>
 
-        <a href="index.html" class="text-2xl font-bold">
-            Mind Body Bloom
-        </a>
-
-        <ul class="hidden md:flex gap-6">
-
-            <li><a href="index.html">Home</a></li>
-
-            <li><a href="pages/about.html">About</a></li>
-
-            <li><a href="pages/personal-action.html">Personal Action</a></li>
-
-            <li><a href="pages/resources.html">Resources</a></li>
-
-        </ul>
-
-    </nav>
-
+  <!-- Mobile menu -->
+  <ul id="mobile-menu" class="hidden md:hidden flex flex-col gap-1 px-4 pb-4 text-sm font-semibold">
+    <li><a href="index.html" class="nav-link-mbb active block py-2">Home</a></li>
+    <li><a href="fitness.html" class="nav-link-mbb block py-2">Fitness</a></li>
+    <li><a href="sleep.html" class="nav-link-mbb block py-2">Sleep</a></li>
+    <li><a href="mental-health.html" class="nav-link-mbb block py-2">Mental Health</a></li>
+    <li><a href="nutrition.html" class="nav-link-mbb block py-2">Nutrition</a></li>
+    <li><a href="personal-action.html" class="nav-link-mbb block py-2">My Plan</a></li>
+    <li><a href="resources.html" class="nav-link-mbb block py-2">Resources</a></li>
+    <li><a href="about.html" class="nav-link-mbb block py-2">About</a></li>
+  </ul>
 </header>
 
-<!-- Hero Section -->
-<section class="text-center py-20">
+<main class="flex-1">
 
-    <h1 class="text-5xl font-bold text-green-700">
+  <!-- ===== HERO ===== -->
+  <section class="hero hero-home text-center">
+    <h1 class="brand-font text-4xl md:text-5xl font-bold mb-4">Small Habits. Big Bloom.</h1>
+    <p class="max-w-2xl mx-auto text-lg mb-6">Practical, bite-sized guidance on fitness, sleep, mental health and nutrition — built for busy teens and young adults in Singapore.</p>
+    <a href="personal-action.html" class="inline-block bg-white text-green-900 font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition">Start Your Personal Action Plan</a>
+  </section>
 
-        Welcome to Mind Body Bloom
+  <!-- ===== DAILY STREAK WIDGET ===== -->
+  <section class="max-w-3xl mx-auto -mt-8 px-4">
+    <div class="streak-widget p-6 text-center shadow-lg">
+      <h2 class="text-xl font-bold mb-2">Daily Health Mission</h2>
+      <p class="text-gray-600 mb-4">Tick off one small healthy habit today and build your streak.</p>
+      <p class="streak-count" id="streak-count">0</p>
+      <p class="text-sm text-gray-500 mb-4">day streak</p>
+      <button id="streak-btn" class="bg-green-800 text-white font-semibold px-6 py-2 rounded-full hover:bg-green-900 transition">Mark Today's Mission Complete</button>
+      <p id="streak-message" class="text-sm text-green-700 mt-3 min-h-[1.25rem]"></p>
+    </div>
+  </section>
 
-    </h1>
+  <!-- ===== TOPIC CARDS ===== -->
+  <section class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold text-center mb-10">Explore the Four Pillars</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <a href="fitness.html" class="card-topic bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+        <h3 class="text-fitness font-bold text-lg mb-2">Fitness</h3>
+        <p class="text-sm text-gray-600">Quick workouts and movement habits that fit a packed school or work schedule.</p>
+      </a>
+      <a href="sleep.html" class="card-topic bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+        <h3 class="text-sleep font-bold text-lg mb-2">Sleep</h3>
+        <p class="text-sm text-gray-600">Wind-down routines and sleep hygiene tips to help you actually rest.</p>
+      </a>
+      <a href="mental-health.html" class="card-topic bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+        <h3 class="text-mental font-bold text-lg mb-2">Mental Health</h3>
+        <p class="text-sm text-gray-600">Stress management and mindfulness practices for a competitive environment.</p>
+      </a>
+      <a href="nutrition.html" class="card-topic bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+        <h3 class="text-nutrition font-bold text-lg mb-2">Nutrition</h3>
+        <p class="text-sm text-gray-600">Simple, affordable ways to eat better without giving up your favourite foods.</p>
+      </a>
+    </div>
+  </section>
 
-    <p class="mt-6 text-xl">
+  <!-- ===== SIGN-UP FORM (with validation) ===== -->
+  <section class="bg-white py-16">
+    <div class="max-w-xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-2">Get Weekly Tips</h2>
+      <p class="text-center text-gray-600 mb-8">Sign up and tell us your main goal — we'll send tips that match.</p>
 
-        Helping you build healthier habits one day at a time.
+      <form id="signup-form" novalidate class="space-y-5">
+        <div>
+          <label for="name" class="block font-semibold mb-1">Name</label>
+          <input type="text" id="name" name="name" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-700">
+          <p id="name-error" class="text-red-600 text-sm mt-1 hidden"></p>
+        </div>
+        <div>
+          <label for="email" class="block font-semibold mb-1">Email</label>
+          <input type="text" id="email" name="email" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-700">
+          <p id="email-error" class="text-red-600 text-sm mt-1 hidden"></p>
+        </div>
+        <div>
+          <label for="goal" class="block font-semibold mb-1">Main Health Goal</label>
+          <select id="goal" name="goal" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-700">
+            <option value="">-- Select a goal --</option>
+            <option value="fitness">Move more / get fitter</option>
+            <option value="sleep">Sleep better</option>
+            <option value="mental-health">Manage stress</option>
+            <option value="nutrition">Eat healthier</option>
+          </select>
+          <p id="goal-error" class="text-red-600 text-sm mt-1 hidden"></p>
+        </div>
+        <div>
+          <label for="message" class="block font-semibold mb-1">Message (optional)</label>
+          <textarea id="message" name="message" rows="3" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-700"></textarea>
+          <p id="message-error" class="text-red-600 text-sm mt-1 hidden"></p>
+        </div>
+        <button type="submit" class="w-full bg-green-800 text-white font-semibold py-3 rounded-lg hover:bg-green-900 transition">Sign Me Up</button>
+      </form>
+      <p id="form-success" class="hidden text-center text-green-700 font-semibold mt-4"></p>
+    </div>
+  </section>
 
-    </p>
+</main>
 
-</section>
-
-<!-- Footer -->
-<footer class="bg-green-700 text-white text-center py-6 mt-20">
-
-    <p>
-
-        © 2026 Mind Body Bloom
-
-    </p>
-
+<!-- ===== FOOTER ===== -->
+<footer class="mbb-footer py-8">
+  <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+    <p>&copy; <span id="footer-year"></span> Mind Body Bloom. A student project by Gabriel, Tong Yu, Guan Zhe &amp; Grace.</p>
+    <div class="flex gap-4">
+      <a href="about.html" class="hover:underline">About</a>
+      <a href="resources.html" class="hover:underline">Resources</a>
+    </div>
+  </div>
 </footer>
 
-<script src="js/main.js"></script>
-
+<script src="assets/js/main.js"></script>
+<script src="assets/js/form-validation.js"></script>
 </body>
 </html>

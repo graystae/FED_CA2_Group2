@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mind Body Bloom | Sleep Tips &amp; Routines</title>
+<meta name="description" content="A practical step-by-step wind-down routine and sleep tips.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="min-h-screen flex flex-col">
+
+<header class="sticky top-0 z-50 shadow-md" style="background-color:#1f4b33;">
+  <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
+    <a href="index.html" class="brand-font text-xl font-bold text-white">Mind Body Bloom</a>
+    <ul class="hidden md:flex gap-6 text-sm font-semibold">
+      <li><a href="index.html" class="nav-link-mbb">Home</a></li>
+      <li><a href="fitness.html" class="nav-link-mbb">Fitness</a></li>
+      <li><a href="sleep.html" class="nav-link-mbb active">Sleep</a></li>
+      <li><a href="mental-health.html" class="nav-link-mbb">Mental Health</a></li>
+      <li><a href="nutrition.html" class="nav-link-mbb">Nutrition</a></li>
+      <li><a href="personal-action.html" class="nav-link-mbb">My Plan</a></li>
+      <li><a href="resources.html" class="nav-link-mbb">Resources</a></li>
+      <li><a href="about.html" class="nav-link-mbb">About</a></li>
+    </ul>
+    <button id="nav-toggle" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden text-white focus:outline-none" aria-label="Toggle navigation menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </nav>
+  <ul id="mobile-menu" class="hidden md:hidden flex flex-col gap-1 px-4 pb-4 text-sm font-semibold">
+    <li><a href="index.html" class="nav-link-mbb block py-2">Home</a></li>
+    <li><a href="fitness.html" class="nav-link-mbb block py-2">Fitness</a></li>
+    <li><a href="sleep.html" class="nav-link-mbb active block py-2">Sleep</a></li>
+    <li><a href="mental-health.html" class="nav-link-mbb block py-2">Mental Health</a></li>
+    <li><a href="nutrition.html" class="nav-link-mbb block py-2">Nutrition</a></li>
+    <li><a href="personal-action.html" class="nav-link-mbb block py-2">My Plan</a></li>
+    <li><a href="resources.html" class="nav-link-mbb block py-2">Resources</a></li>
+    <li><a href="about.html" class="nav-link-mbb block py-2">About</a></li>
+  </ul>
+</header>
+
+<main class="flex-1">
+
+  <section class="hero hero-sleep text-center">
+    <h1 class="brand-font text-4xl md:text-5xl font-bold mb-4">Your Wind-Down Routine</h1>
+    <p class="max-w-2xl mx-auto text-lg">Five simple steps to help your body and mind prepare for real rest.</p>
+  </section>
+
+  <section class="max-w-4xl mx-auto px-4 py-14">
+    <ol class="space-y-6">
+      <li class="card-topic bg-white rounded-xl shadow p-6 flex gap-4">
+        <span class="text-sleep font-bold text-2xl">1</span>
+        <div>
+          <h3 class="font-bold mb-1">Set a screen curfew (60 min before bed)</h3>
+          <p class="text-sm text-gray-600">Blue light and stimulating content delay your body's release of melatonin, the sleep hormone.</p>
+        </div>
+      </li>
+      <li class="card-topic bg-white rounded-xl shadow p-6 flex gap-4">
+        <span class="text-sleep font-bold text-2xl">2</span>
+        <div>
+          <h3 class="font-bold mb-1">Dim the lights</h3>
+          <p class="text-sm text-gray-600">Switch to warm, low lighting to signal to your brain that night has arrived.</p>
+        </div>
+      </li>
+      <li class="card-topic bg-white rounded-xl shadow p-6 flex gap-4">
+        <span class="text-sleep font-bold text-2xl">3</span>
+        <div>
+          <h3 class="font-bold mb-1">Do something calming</h3>
+          <p class="text-sm text-gray-600">Light stretching, journaling or reading a physical book all help you shift out of "alert" mode.</p>
+        </div>
+      </li>
+      <li class="card-topic bg-white rounded-xl shadow p-6 flex gap-4">
+        <span class="text-sleep font-bold text-2xl">4</span>
+        <div>
+          <h3 class="font-bold mb-1">Cool your room down</h3>
+          <p class="text-sm text-gray-600">A slightly cool room (around 24–26°C in Singapore's climate) supports deeper sleep.</p>
+        </div>
+      </li>
+      <li class="card-topic bg-white rounded-xl shadow p-6 flex gap-4">
+        <span class="text-sleep font-bold text-2xl">5</span>
+        <div>
+          <h3 class="font-bold mb-1">Keep a consistent bedtime</h3>
+          <p class="text-sm text-gray-600">Going to bed at roughly the same time each night trains your body to fall asleep faster over time.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section class="bg-white py-14 text-center">
+    <h2 class="text-2xl font-bold mb-4">Ready to build this into your daily plan?</h2>
+    <a href="personal-action.html" class="inline-block btn-sleep font-semibold px-6 py-3 rounded-full hover:opacity-90 transition">Add to My Action Plan</a>
+  </section>
+
+</main>
+
+<footer class="mbb-footer py-8">
+  <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+    <p>&copy; <span id="footer-year"></span> Mind Body Bloom. A student project by Gabriel, Tong Yu, Guan Zhe &amp; Grace.</p>
+    <div class="flex gap-4">
+      <a href="about.html" class="hover:underline">About</a>
+      <a href="resources.html" class="hover:underline">Resources</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

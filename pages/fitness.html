@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mind Body Bloom | Fitness</title>
+<meta name="description" content="Quick workouts and movement habits for busy schedules.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="min-h-screen flex flex-col">
+
+<header class="sticky top-0 z-50 shadow-md" style="background-color:#1f4b33;">
+  <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
+    <a href="index.html" class="brand-font text-xl font-bold text-white">Mind Body Bloom</a>
+    <ul class="hidden md:flex gap-6 text-sm font-semibold">
+      <li><a href="index.html" class="nav-link-mbb">Home</a></li>
+      <li><a href="fitness.html" class="nav-link-mbb active">Fitness</a></li>
+      <li><a href="sleep.html" class="nav-link-mbb">Sleep</a></li>
+      <li><a href="mental-health.html" class="nav-link-mbb">Mental Health</a></li>
+      <li><a href="nutrition.html" class="nav-link-mbb">Nutrition</a></li>
+      <li><a href="personal-action.html" class="nav-link-mbb">My Plan</a></li>
+      <li><a href="resources.html" class="nav-link-mbb">Resources</a></li>
+      <li><a href="about.html" class="nav-link-mbb">About</a></li>
+    </ul>
+    <button id="nav-toggle" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden text-white focus:outline-none" aria-label="Toggle navigation menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </nav>
+  <ul id="mobile-menu" class="hidden md:hidden flex flex-col gap-1 px-4 pb-4 text-sm font-semibold">
+    <li><a href="index.html" class="nav-link-mbb block py-2">Home</a></li>
+    <li><a href="fitness.html" class="nav-link-mbb active block py-2">Fitness</a></li>
+    <li><a href="sleep.html" class="nav-link-mbb block py-2">Sleep</a></li>
+    <li><a href="mental-health.html" class="nav-link-mbb block py-2">Mental Health</a></li>
+    <li><a href="nutrition.html" class="nav-link-mbb block py-2">Nutrition</a></li>
+    <li><a href="personal-action.html" class="nav-link-mbb block py-2">My Plan</a></li>
+    <li><a href="resources.html" class="nav-link-mbb block py-2">Resources</a></li>
+    <li><a href="about.html" class="nav-link-mbb block py-2">About</a></li>
+  </ul>
+</header>
+
+<main class="flex-1">
+
+  <section class="hero hero-fitness text-center">
+    <h1 class="brand-font text-4xl md:text-5xl font-bold mb-4">Move More, Feel Stronger</h1>
+    <p class="max-w-2xl mx-auto text-lg">You don't need a gym membership to build a fitness habit — just a few honest minutes a day.</p>
+  </section>
+
+  <section class="max-w-5xl mx-auto px-4 py-14">
+    <h2 class="text-2xl font-bold mb-6 text-fitness">Quick Workout Gallery</h2>
+    <p class="text-gray-700 mb-6">Filter by how much time or space you have, and pick one to try today.</p>
+
+    <div class="flex flex-wrap gap-2 mb-6">
+      <button class="gallery-filter-btn active px-4 py-2 rounded-full text-sm font-semibold border-2" style="border-color:#b33a3a;" data-filter="all">All</button>
+      <button class="gallery-filter-btn px-4 py-2 rounded-full text-sm font-semibold border-2" style="border-color:#b33a3a;" data-filter="no-equipment">No Equipment</button>
+      <button class="gallery-filter-btn px-4 py-2 rounded-full text-sm font-semibold border-2" style="border-color:#b33a3a;" data-filter="quick">Under 10 Min</button>
+      <button class="gallery-filter-btn px-4 py-2 rounded-full text-sm font-semibold border-2" style="border-color:#b33a3a;" data-filter="desk">Desk Break</button>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="gallery-item card-topic bg-white rounded-xl shadow p-6" data-category="no-equipment">
+        <h3 class="font-bold mb-2">Bodyweight Circuit</h3>
+        <p class="text-sm text-gray-600">Squats, push-ups, lunges — 3 rounds, no equipment needed.</p>
+      </div>
+      <div class="gallery-item card-topic bg-white rounded-xl shadow p-6" data-category="quick">
+        <h3 class="font-bold mb-2">7-Minute HIIT</h3>
+        <p class="text-sm text-gray-600">A fast, sweaty full-body session that fits between classes.</p>
+      </div>
+      <div class="gallery-item card-topic bg-white rounded-xl shadow p-6" data-category="desk">
+        <h3 class="font-bold mb-2">Desk Stretch Break</h3>
+        <p class="text-sm text-gray-600">Neck, shoulder and wrist stretches you can do at your study desk.</p>
+      </div>
+      <div class="gallery-item card-topic bg-white rounded-xl shadow p-6" data-category="no-equipment quick">
+        <h3 class="font-bold mb-2">10-Minute Walk</h3>
+        <p class="text-sm text-gray-600">A brisk walk around the block — simple, free, and effective.</p>
+      </div>
+      <div class="gallery-item card-topic bg-white rounded-xl shadow p-6" data-category="quick">
+        <h3 class="font-bold mb-2">Core Blast</h3>
+        <p class="text-sm text-gray-600">Planks and crunches for a stronger core in under 10 minutes.</p>
+      </div>
+      <div class="gallery-item card-topic bg-white rounded-xl shadow p-6" data-category="desk">
+        <h3 class="font-bold mb-2">Seated Leg Raises</h3>
+        <p class="text-sm text-gray-600">A subtle way to keep moving even while stuck at your desk.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white py-14 text-center">
+    <h2 class="text-2xl font-bold mb-4">Want a full weekly workout schedule?</h2>
+    <a href="fitness-workouts.html" class="inline-block btn-fitness font-semibold px-6 py-3 rounded-full hover:opacity-90 transition">See Weekly Workout Plan</a>
+  </section>
+
+</main>
+
+<footer class="mbb-footer py-8">
+  <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+    <p>&copy; <span id="footer-year"></span> Mind Body Bloom. A student project by Gabriel, Tong Yu, Guan Zhe &amp; Grace.</p>
+    <div class="flex gap-4">
+      <a href="about.html" class="hover:underline">About</a>
+      <a href="resources.html" class="hover:underline">Resources</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

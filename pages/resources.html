@@ -1,80 +1,130 @@
-<!-- Webpage Template -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Mind Body Bloom</title>
-
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="../css/style.css">
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mind Body Bloom | Resources</title>
+<meta name="description" content="Helplines, apps and FAQs to support your health journey.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
+<body class="min-h-screen flex flex-col">
 
-<body class="bg-stone-50 text-gray-800">
-
-<!-- Shared Navbar -->
-<header class="bg-green-700 text-white shadow">
-
-<nav class="max-w-7xl mx-auto flex justify-between items-center p-4">
-
-    <a href="../index.html" class="text-2xl font-bold">
-        Mind Body Bloom
-    </a>
-
-    <ul class="hidden md:flex gap-6">
-
-        <li><a href="../index.html">Home</a></li>
-
-        <li><a href="about.html">About</a></li>
-
-        <li><a href="personal-action.html">Personal Action</a></li>
-
-        <li><a href="resources.html">Resources</a></li>
-
+<header class="sticky top-0 z-50 shadow-md" style="background-color:#1f4b33;">
+  <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
+    <a href="index.html" class="brand-font text-xl font-bold text-white">Mind Body Bloom</a>
+    <ul class="hidden md:flex gap-6 text-sm font-semibold">
+      <li><a href="index.html" class="nav-link-mbb">Home</a></li>
+      <li><a href="fitness.html" class="nav-link-mbb">Fitness</a></li>
+      <li><a href="sleep.html" class="nav-link-mbb">Sleep</a></li>
+      <li><a href="mental-health.html" class="nav-link-mbb">Mental Health</a></li>
+      <li><a href="nutrition.html" class="nav-link-mbb">Nutrition</a></li>
+      <li><a href="personal-action.html" class="nav-link-mbb">My Plan</a></li>
+      <li><a href="resources.html" class="nav-link-mbb active">Resources</a></li>
+      <li><a href="about.html" class="nav-link-mbb">About</a></li>
     </ul>
-
-</nav>
-
+    <button id="nav-toggle" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden text-white focus:outline-none" aria-label="Toggle navigation menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </nav>
+  <ul id="mobile-menu" class="hidden md:hidden flex flex-col gap-1 px-4 pb-4 text-sm font-semibold">
+    <li><a href="index.html" class="nav-link-mbb block py-2">Home</a></li>
+    <li><a href="fitness.html" class="nav-link-mbb block py-2">Fitness</a></li>
+    <li><a href="sleep.html" class="nav-link-mbb block py-2">Sleep</a></li>
+    <li><a href="mental-health.html" class="nav-link-mbb block py-2">Mental Health</a></li>
+    <li><a href="nutrition.html" class="nav-link-mbb block py-2">Nutrition</a></li>
+    <li><a href="personal-action.html" class="nav-link-mbb block py-2">My Plan</a></li>
+    <li><a href="resources.html" class="nav-link-mbb active block py-2">Resources</a></li>
+    <li><a href="about.html" class="nav-link-mbb block py-2">About</a></li>
+  </ul>
 </header>
 
-<!-- Hero Section -->
-<section class="text-center py-20">
+<main class="flex-1">
 
-    <h1 class="text-5xl font-bold text-green-700">
+  <section class="hero hero-neutral text-center">
+    <h1 class="brand-font text-4xl md:text-5xl font-bold mb-4">Resources &amp; Support</h1>
+    <p class="max-w-2xl mx-auto text-lg">Helplines, trusted apps and answers to common questions.</p>
+  </section>
 
-        Welcome to Mind Body Bloom
+  <section class="max-w-5xl mx-auto px-4 py-14">
+    <h2 class="text-2xl font-bold mb-6">Helplines (Singapore)</h2>
+    <div class="grid md:grid-cols-3 gap-6 mb-14">
+      <div class="card-topic bg-white rounded-xl shadow p-6">
+        <h3 class="font-bold mb-2">National Care Hotline</h3>
+        <p class="text-sm text-gray-600">1800-202-6868 — general emotional support, daily 8am–12am.</p>
+      </div>
+      <div class="card-topic bg-white rounded-xl shadow p-6">
+        <h3 class="font-bold mb-2">Samaritans of Singapore (SOS)</h3>
+        <p class="text-sm text-gray-600">1-767 — 24-hour crisis support hotline.</p>
+      </div>
+      <div class="card-topic bg-white rounded-xl shadow p-6">
+        <h3 class="font-bold mb-2">Health Promotion Board</h3>
+        <p class="text-sm text-gray-600">hpb.gov.sg — official guidance on nutrition, exercise and sleep.</p>
+      </div>
+    </div>
 
-    </h1>
+    <h2 class="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
+    <div class="space-y-3">
 
-    <p class="mt-6 text-xl">
+      <div class="bg-white rounded-lg shadow">
+        <button class="accordion-header w-full flex justify-between items-center p-4 text-left font-semibold" aria-expanded="false" aria-controls="faq-panel-1">
+          <span>Do I need to change everything at once?</span>
+          <svg class="accordion-icon h-5 w-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+        </button>
+        <div id="faq-panel-1" class="accordion-panel px-4">
+          <p class="text-sm text-gray-600 pb-4">No — Mind Body Bloom is built around small, sustainable habits. Pick one area (sleep, fitness, nutrition or mental health) and start with a single change.</p>
+        </div>
+      </div>
 
-        Helping you build healthier habits one day at a time.
+      <div class="bg-white rounded-lg shadow">
+        <button class="accordion-header w-full flex justify-between items-center p-4 text-left font-semibold" aria-expanded="false" aria-controls="faq-panel-2">
+          <span>Is this website a substitute for professional help?</span>
+          <svg class="accordion-icon h-5 w-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+        </button>
+        <div id="faq-panel-2" class="accordion-panel px-4">
+          <p class="text-sm text-gray-600 pb-4">No. This is a student project for educational purposes. If you're struggling, please reach out to the helplines listed above or a healthcare professional.</p>
+        </div>
+      </div>
 
-    </p>
+      <div class="bg-white rounded-lg shadow">
+        <button class="accordion-header w-full flex justify-between items-center p-4 text-left font-semibold" aria-expanded="false" aria-controls="faq-panel-3">
+          <span>How does the Daily Health Mission streak work?</span>
+          <svg class="accordion-icon h-5 w-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+        </button>
+        <div id="faq-panel-3" class="accordion-panel px-4">
+          <p class="text-sm text-gray-600 pb-4">Mark your mission complete once a day on the homepage. Do it on consecutive days to grow your streak — it's saved on your device.</p>
+        </div>
+      </div>
 
-</section>
+      <div class="bg-white rounded-lg shadow">
+        <button class="accordion-header w-full flex justify-between items-center p-4 text-left font-semibold" aria-expanded="false" aria-controls="faq-panel-4">
+          <span>Where do the tips on this site come from?</span>
+          <svg class="accordion-icon h-5 w-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+        </button>
+        <div id="faq-panel-4" class="accordion-panel px-4">
+          <p class="text-sm text-gray-600 pb-4">General public health guidance (e.g. Health Promotion Board recommendations), adapted for a student audience. Always consult a professional for personalised advice.</p>
+        </div>
+      </div>
 
-<!-- Footer -->
-<footer class="bg-green-700 text-white text-center py-6 mt-20">
+    </div>
+  </section>
 
-    <p>
+</main>
 
-        © 2026 Mind Body Bloom
-
-    </p>
-
+<footer class="mbb-footer py-8">
+  <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+    <p>&copy; <span id="footer-year"></span> Mind Body Bloom. A student project by Gabriel, Tong Yu, Guan Zhe &amp; Grace.</p>
+    <div class="flex gap-4">
+      <a href="about.html" class="hover:underline">About</a>
+      <a href="resources.html" class="hover:underline">Resources</a>
+    </div>
+  </div>
 </footer>
 
-<script src="../js/main.js"></script>
-
+<script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mind Body Bloom | About</title>
-<meta name="description" content="About the Mind Body Bloom project and team.">
+<title>Mind Body Bloom | Weekly Workout Plan</title>
+<meta name="description" content="A sample weekly workout schedule for beginners.">
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -17,13 +17,13 @@
     <a href="index.html" class="brand-font text-xl font-bold text-white">Mind Body Bloom</a>
     <ul class="hidden md:flex gap-6 text-sm font-semibold">
       <li><a href="index.html" class="nav-link-mbb">Home</a></li>
-      <li><a href="fitness.html" class="nav-link-mbb">Fitness</a></li>
+      <li><a href="fitness.html" class="nav-link-mbb active">Fitness</a></li>
       <li><a href="sleep.html" class="nav-link-mbb">Sleep</a></li>
       <li><a href="mental-health.html" class="nav-link-mbb">Mental Health</a></li>
       <li><a href="nutrition.html" class="nav-link-mbb">Nutrition</a></li>
       <li><a href="personal-action.html" class="nav-link-mbb">My Plan</a></li>
       <li><a href="resources.html" class="nav-link-mbb">Resources</a></li>
-      <li><a href="about.html" class="nav-link-mbb active">About</a></li>
+      <li><a href="about.html" class="nav-link-mbb">About</a></li>
     </ul>
     <button id="nav-toggle" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden text-white focus:outline-none" aria-label="Toggle navigation menu">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -33,46 +33,45 @@
   </nav>
   <ul id="mobile-menu" class="hidden md:hidden flex flex-col gap-1 px-4 pb-4 text-sm font-semibold">
     <li><a href="index.html" class="nav-link-mbb block py-2">Home</a></li>
-    <li><a href="fitness.html" class="nav-link-mbb block py-2">Fitness</a></li>
+    <li><a href="fitness.html" class="nav-link-mbb active block py-2">Fitness</a></li>
     <li><a href="sleep.html" class="nav-link-mbb block py-2">Sleep</a></li>
     <li><a href="mental-health.html" class="nav-link-mbb block py-2">Mental Health</a></li>
     <li><a href="nutrition.html" class="nav-link-mbb block py-2">Nutrition</a></li>
     <li><a href="personal-action.html" class="nav-link-mbb block py-2">My Plan</a></li>
     <li><a href="resources.html" class="nav-link-mbb block py-2">Resources</a></li>
-    <li><a href="about.html" class="nav-link-mbb active block py-2">About</a></li>
+    <li><a href="about.html" class="nav-link-mbb block py-2">About</a></li>
   </ul>
 </header>
 
 <main class="flex-1">
 
-  <section class="hero hero-neutral text-center">
-    <h1 class="brand-font text-4xl md:text-5xl font-bold mb-4">About Mind Body Bloom</h1>
-    <p class="max-w-2xl mx-auto text-lg">A student project encouraging small, practical habits for better well-being.</p>
+  <section class="hero hero-fitness text-center">
+    <h1 class="brand-font text-4xl md:text-5xl font-bold mb-4">Sample Weekly Workout Plan</h1>
+    <p class="max-w-2xl mx-auto text-lg">A beginner-friendly split you can adjust to your own schedule and energy levels.</p>
   </section>
 
   <section class="max-w-5xl mx-auto px-4 py-14">
-    <h2 class="text-2xl font-bold mb-4">Our Mission</h2>
-    <p class="text-gray-700 leading-relaxed mb-12">Mind Body Bloom was created to encourage teens and young adults (16-30) in Singapore to adopt small, practical habits that improve their physical and mental well-being — through simple guidance on exercise, sleep, mental health and nutrition, tailored to a fast-paced, competitive environment.</p>
-
-    <h2 class="text-2xl font-bold mb-6">Meet the Team</h2>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      <div class="card-topic bg-white rounded-xl shadow p-6 text-center">
-        <h3 class="font-bold mb-1">Gabriel</h3>
-        <p class="text-sm text-gray-600">Homepage &amp; Mental Health content</p>
-      </div>
-      <div class="card-topic bg-white rounded-xl shadow p-6 text-center">
-        <h3 class="font-bold mb-1">Tong Yu</h3>
-        <p class="text-sm text-gray-600">Sleep pages &amp; Resources</p>
-      </div>
-      <div class="card-topic bg-white rounded-xl shadow p-6 text-center">
-        <h3 class="font-bold mb-1">Guan Zhe</h3>
-        <p class="text-sm text-gray-600">Fitness content &amp; UI design</p>
-      </div>
-      <div class="card-topic bg-white rounded-xl shadow p-6 text-center">
-        <h3 class="font-bold mb-1">Grace</h3>
-        <p class="text-sm text-gray-600">Nutrition &amp; About page</p>
-      </div>
+    <div class="overflow-x-auto">
+      <table class="w-full text-left border-collapse">
+        <thead>
+          <tr class="text-white" style="background-color:#b33a3a;">
+            <th class="p-3">Day</th>
+            <th class="p-3">Focus</th>
+            <th class="p-3">Duration</th>
+          </tr>
+        </thead>
+        <tbody class="bg-white">
+          <tr class="border-b"><td class="p-3">Monday</td><td class="p-3">Bodyweight Circuit</td><td class="p-3">20 min</td></tr>
+          <tr class="border-b bg-gray-50"><td class="p-3">Tuesday</td><td class="p-3">Brisk Walk / Cardio</td><td class="p-3">30 min</td></tr>
+          <tr class="border-b"><td class="p-3">Wednesday</td><td class="p-3">Rest / Desk Stretches</td><td class="p-3">10 min</td></tr>
+          <tr class="border-b bg-gray-50"><td class="p-3">Thursday</td><td class="p-3">7-Minute HIIT</td><td class="p-3">10 min</td></tr>
+          <tr class="border-b"><td class="p-3">Friday</td><td class="p-3">Core Blast</td><td class="p-3">15 min</td></tr>
+          <tr class="border-b bg-gray-50"><td class="p-3">Saturday</td><td class="p-3">Active Rest (sport, dance, walk)</td><td class="p-3">Flexible</td></tr>
+          <tr><td class="p-3">Sunday</td><td class="p-3">Full Rest</td><td class="p-3">—</td></tr>
+        </tbody>
+      </table>
     </div>
+    <p class="text-sm text-gray-500 mt-4">Tip: start with 2-3 days a week and build up gradually — consistency beats intensity.</p>
   </section>
 
 </main>
