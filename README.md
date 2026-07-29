@@ -32,7 +32,7 @@ FED_CA2_Group2/
 │   │
 │   │
 │   ├── img/
-│   |    └── (empty)    
+│   |    └── example.jpeg
 │   │
 │   ├── css/
 │   │   └── style.css (empty)                   # Shared styles
