@@ -31,12 +31,13 @@ FED_CA2_Group2/
 ├── assets/
 │   │
 │   │
-│   └── img/
-│       └── (empty)    
-├── css/
-│   └── style.css (empty)                   # Shared styles
-│
-├── js/
+│   ├── img/
+│   |    └── (empty)    
+│   │
+│   ├── css/
+│   │   └── style.css (empty)                   # Shared styles
+│   │
+│   ├── js/
 │   ├── main.js   (empty)                  # Navbar, streak counter, tabs, accordion
 │   └── form-validation.js (empty)         # Signup form validation
 │
