@@ -37,7 +37,7 @@ FED_CA2_Group2/
 │   └── style.css (empty)                   # Shared styles
 │
 ├── js/
-│   ├── main.js                     # Navbar, streak counter, tabs, accordion
+│   ├── main.js   (empty)                  # Navbar, streak counter, tabs, accordion
 │   └── form-validation.js (empty)         # Signup form validation
 │
 └── docs/                               # Optional (for project documents)
