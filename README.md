@@ -30,15 +30,15 @@ FED_CA2_Group2/
 │
 ├── assets/
 │   │
-│   ├── css/
-│   │   └── style.css                   # Shared styles
-│   │
-│   ├── js/
-│   │   ├── main.js                     # Navbar, streak counter, tabs, accordion
-│   │   └── form-validation.js          # Signup form validation
 │   │
 │   └── img/
-│       └── (empty)         
+│       └── (empty)    
+├── css/
+│   └── style.css (empty)                   # Shared styles
+│
+├── js/
+│   ├── main.js                     # Navbar, streak counter, tabs, accordion
+│   └── form-validation.js (empty)         # Signup form validation
 │
 └── docs/                               # Optional (for project documents)
     ├── project-planning.docx
