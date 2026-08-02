@@ -15,42 +15,43 @@
 <!-- ===== NAVBAR ===== -->
 <header class="bg-green-900 text-white shadow">
 
-  <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
-    <a href="index.html" class="brand-font text-xl font-bold text-white">Mind Body Bloom</a>
+<nav class="max-w-7xl mx-auto flex justify-between items-center p-4 relative">
 
-        <ul class="hidden md:flex gap-6">
+    <!-- Logo -->
+    <a href="../index.html" class="text-2xl font-bold">
+        Mind Body Bloom
+    </a>
 
-            <li><a href="index.html">Home</a></li>
+    <!-- Hamburger Button -->
+    <button id="menuBtn" class="md:hidden text-2xl">
+        ☰
+    </button>
 
-            <li><a href="pages/about.html">About</a></li>
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex gap-6">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="personal-action.html">Personal Action</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="fitness1.html">Fitness</a></li>
+        <li><a href="mentalhealth1.html">Mental Health</a></li>
+        <li><a href="nutrition1.html">Food</a></li>
+        <li><a href="sleep1.html">Sleep</a></li>
+    </ul>
 
-            <li><a href="pages/personal-action.html">Personal Action</a></li>
+    <!-- Mobile Dropdown Menu -->
+    <ul id="mobileMenu" class="hidden absolute top-16 left-0 w-full bg-green-900 flex flex-col text-center gap-4 py-4 md:hidden">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="personal-action.html">Personal Action</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="fitness1.html">Fitness</a></li>
+        <li><a href="mentalhealth1.html">Mental Health</a></li>
+        <li><a href="nutrition1.html">Food</a></li>
+        <li><a href="sleep1.html">Sleep</a></li>
+    </ul>
 
-            <li><a href="pages/resources.html">Resources</a></li>
-
-            <li><a href="pages/fitness1.html">Fitness</a></li>
-
-            <li><a href="pages/mentalhealth1.html">Mental Health</a></li>
-
-            <li><a href="pages/nutrition1.html">Food</a></li>
-
-            <li><a href="pages/sleep1.html">Sleep</a></li>
-
-        </ul>
-
-         <div class="md:hidden flex items-center">
-          <button id="menu-btn" class="text-gray-700 hover:text-blue-600 focus:outline-none">
-            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
-        </div>
-
-      </div>
-    </div>
-      
-  </nav>
-
+</nav>
 </header>
 <main class="flex-1">
 
@@ -111,5 +112,7 @@
 
 <script src="assets/js/main.js"></script>
 <script src="assets/js/form-validation.js"></script>
+<script src="assets/js/nav.js"></script>
+
 </body>
 </html>
