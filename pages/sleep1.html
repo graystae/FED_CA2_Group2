@@ -22,33 +22,42 @@
 <body class="bg-stone-50 text-gray-800">
 
 <!-- Shared Navbar -->
-<header class="bg-green-700 text-white shadow">
+<header class="bg-green-900 text-white shadow">
 
-<nav class="max-w-7xl mx-auto flex justify-between items-center p-4">
+<nav class="max-w-7xl mx-auto flex justify-between items-center p-4 relative">
 
-    <a href="../index.html" class="text-2xl font-bold">
+    <!-- Logo -->
+    <a href="index.html" class="text-2xl font-bold">
         Mind Body Bloom
     </a>
 
+    <!-- Hamburger Button -->
+    <button id="menuBtn" class="md:hidden text-2xl">
+        ☰
+    </button>
+
+    <!-- Desktop Menu -->
     <ul class="hidden md:flex gap-6">
-
-  <li><a href="../index.html">Home</a></li>
-
+        <li><a href="../index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-
         <li><a href="personal-action.html">Personal Action</a></li>
-
         <li><a href="resources.html">Resources</a></li>
-
         <li><a href="fitness1.html">Fitness</a></li>
-
         <li><a href="mentalhealth1.html">Mental Health</a></li>
-
         <li><a href="nutrition1.html">Food</a></li>
-
         <li><a href="sleep1.html">Sleep</a></li>
+    </ul>
 
-
+    <!-- Mobile Dropdown Menu -->
+    <ul id="mobileMenu" class="hidden absolute top-16 left-0 w-full bg-green-900 flex flex-col text-center gap-4 py-4 md:hidden">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="personal-action.html">Personal Action</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="fitness1.html">Fitness</a></li>
+        <li><a href="mentalhealth1.html">Mental Health</a></li>
+        <li><a href="nutrition1.html">Food</a></li>
+        <li><a href="sleep1.html">Sleep</a></li>
     </ul>
 
 </nav>
@@ -56,26 +65,26 @@
 </header>
 
 <!-- Hero Section -->
-<section class="text-center py-20">
+<section class="text-center py-20 bg-gradient-to-r from-sky-900 to-sky-600 text-white">
 
-    <h1 class="text-5xl font-bold text-green-700">
+    <h1 class="text-5xl font-bold ">
 
-        Sleep
+        Sleep Better, Feel Better
 
     </h1>
 
     <p class="mt-6 text-xl">
 
-        Helping you build healthier habits one day at a time.
+       Good sleep is the foundation everything else is built on. Start with one small change tonight. 😴
 
     </p>
 
 </section>
-<aside>
-    <a href="sleep2.html" class="block text-center text-l text-blue-500">Know More>></a>
+<aside class="flex justify-center">
+    <a href="sleep2.html" class="block inline-block text-l text-blue-500bg-white text-green-900 font-semibold px-6 py-3 rounded-full shadow hover:shadow-lg hover:bg-gray-100 transition w-fit">Know More>></a>
 </aside>
 <!-- Footer -->
-<footer class="bg-green-700 text-white text-center py-6 mt-20">
+<footer class="bg-green-900 text-white text-center py-6 mt-20">
 
     <p>
 
@@ -86,6 +95,7 @@
 </footer>
 
 <script src="../js/main.js"></script>
+<script src="../assets/js/nav.js"></script>
 
 </body>
 </html>

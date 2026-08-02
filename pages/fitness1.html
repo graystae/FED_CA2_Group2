@@ -22,33 +22,42 @@
 <body class="bg-stone-50 text-gray-800">
 
 <!-- Shared Navbar -->
-<header class="bg-green-700 text-white shadow">
+<header class="bg-green-900 text-white shadow">
 
-<nav class="max-w-7xl mx-auto flex justify-between items-center p-4">
+<nav class="max-w-7xl mx-auto flex justify-between items-center p-4 relative">
 
-    <a href="../index.html" class="text-2xl font-bold">
+    <!-- Logo -->
+    <a href="index.html" class="text-2xl font-bold">
         Mind Body Bloom
     </a>
 
+    <!-- Hamburger Button -->
+    <button id="menuBtn" class="md:hidden text-2xl">
+        ☰
+    </button>
+
+    <!-- Desktop Menu -->
     <ul class="hidden md:flex gap-6">
-
         <li><a href="../index.html">Home</a></li>
-
         <li><a href="about.html">About</a></li>
-
         <li><a href="personal-action.html">Personal Action</a></li>
-
         <li><a href="resources.html">Resources</a></li>
-
         <li><a href="fitness1.html">Fitness</a></li>
-
         <li><a href="mentalhealth1.html">Mental Health</a></li>
-
         <li><a href="nutrition1.html">Food</a></li>
-
         <li><a href="sleep1.html">Sleep</a></li>
+    </ul>
 
-
+    <!-- Mobile Dropdown Menu -->
+    <ul id="mobileMenu" class="hidden absolute top-16 left-0 w-full bg-green-900 flex flex-col text-center gap-4 py-4 md:hidden">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="personal-action.html">Personal Action</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="fitness1.html">Fitness</a></li>
+        <li><a href="mentalhealth1.html">Mental Health</a></li>
+        <li><a href="nutrition1.html">Food</a></li>
+        <li><a href="sleep1.html">Sleep</a></li>
     </ul>
 
 </nav>
@@ -56,9 +65,9 @@
 </header>
 
 <!-- Hero Section -->
-<section class="text-center py-20">
+<section class="text-center py-20 bg-gradient-to-r from-red-900 to-red-600 text-white">
 
-    <h1 class="text-5xl font-bold text-green-700">
+    <h1 class="text-5xl font-bold text-white-700">
 
        Fitness
 
@@ -66,17 +75,54 @@
 
     <p class="mt-6 text-xl">
 
-        Helping you build healthier habits one day at a time.
+        Ready to feel stronger, healthier, and more confident? 💪
 
     </p>
 
 </section>
-<aside>
-    <a href="fitness2.html" class="block text-center text-l text-blue-500">Know More>></a>
+<aside class="flex justify-center">
+    <a href="fitness2.html" class="block inline-block text-l text-blue-500bg-white text-green-900 font-semibold px-6 py-3 rounded-full shadow hover:shadow-lg hover:bg-gray-100 transition w-fit">Know More>></a>
 </aside>
 
+<!--Introduction-->
+<section>
+        <h1>
+        The Importance of Fitness and Exercising in Building a Healthy Lifestyle
+    </h1>
+    <p>
+        Singapore has a highly competitive environment so maintaining a healthy lifestyle has become 
+        increasingly important, especially among young people who often face academic stress, long hours 
+        of screen time, and irregular routines. One of the most effective ways to achieve and sustain a 
+        healthy lifestyle is through regular exercise and physical fitness. Exercise is not only beneficial 
+        for physical health and enhancing overall quality of life, which will be mentioned behide other pages.
+    </p>
+
+    <p>
+        Regular exercise significantly improves physical health. Engaging in activities such as jogging, cycling, 
+        or strength training helps to strengthen the heart and lungs, build muscles and bones, and increase 
+        stamina. It also reduces the risk of chronic diseases such as obesity, diabetes, and heart conditions. Other 
+        than that, it could also make us more discipline and motivated. By doing this, you could obtain a more productive
+        lifestyle.
+    </p>
+
+    <p>
+        Another key benefit of exercising/fitness is their role in maintaining a healthy weight. Combined with a balanced diet, 
+        regular physical activity helps to burn excess calories and instead of gaining mass , you would gain more muscle mass. This not 
+        only prevents unhealthy weight gain but also supports long-term health. It is important to understand that the goal is 
+        to not simply achieve a certain body image, but to maintain a body that is strong and healthy for the rest of our lifes.
+    </p>
+
+    <p>
+        In conclusion, exercising/fitness is a fundamental component of a healthy lifestyle. It provides numerous physical, mental, and 
+        emotional benefits that contribute to overall well-being. By incorporating regular physical activity into our daily lifes, 
+        individuals can lead a healthier, happier, and more fulfilling lives. Therefore, it is essential for everyone, especially 
+        young people, to prioritize fitness and make it a consistent part of their lifestyle. It is also proven that, alot youngsters in 
+        Singapore is now hitting the gym even at the age of 14! This is already a really good start of maintaining a healthy lifestyle.
+    </p>
+</section>
+
 <!-- Footer -->
-<footer class="bg-green-700 text-white text-center py-6 mt-20">
+<footer class="bg-green-900 text-white text-center py-6 mt-20">
 
     <p>
 
@@ -87,6 +133,7 @@
 </footer>
 
 <script src="../js/main.js"></script>
+<script src="../assets/js/nav.js"></script>
 
 </body>
 </html>
