@@ -1,3 +1,12 @@
+/* ---------------- Navbar ----------- */
+
+const menuBtn = document.getElementById("menuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+
+menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+});
+
 /* ---------- FAQ accordion (resources.html / about.html) ---------- */
 function initAccordion() {
   var headers = document.querySelectorAll('.accordion-header');
@@ -23,3 +32,4 @@ function setFooterYear() {
     el.textContent = new Date().getFullYear();
   }
 }
+
