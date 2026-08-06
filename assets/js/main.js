@@ -1,4 +1,5 @@
 /* ---------------- Navbar ----------- */
+//across all pages
 
 const menuBtn = document.getElementById("menuBtn");
 const mobileMenu = document.getElementById("mobileMenu");
@@ -8,6 +9,7 @@ menuBtn.addEventListener("click", () => {
 });
 
 /* ---------- FAQ accordion (resources.html / about.html) ---------- */
+
 function initAccordion() {
   var headers = document.querySelectorAll('.accordion-header');
   if (!headers.length) return;
@@ -32,4 +34,3 @@ function setFooterYear() {
     el.textContent = new Date().getFullYear();
   }
 }
-
